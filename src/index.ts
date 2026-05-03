@@ -36,3 +36,22 @@ type unionType = string | number
 
 let a: unionType = 5
 let b: unionType = "String"
+
+// Intersection in Types
+interface Employee {
+    name: string,
+    joiningDate: string
+}
+
+interface Manager {
+    name: string,
+    department: string
+}
+
+type TeamLead = Employee & Manager
+
+let teamLead: TeamLead = {
+    name: "Vinay",
+    joiningDate: "02 May",
+    department: "Random"
+}
