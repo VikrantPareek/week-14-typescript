@@ -48,7 +48,7 @@ interface Manager {
     department: string
 }
 
-type TeamLead = Employee & Manager
+type TeamLead = Manager & Employee
 
 let teamLead: TeamLead = {
     name: "Vinay",
