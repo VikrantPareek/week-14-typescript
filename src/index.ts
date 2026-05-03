@@ -30,3 +30,9 @@ interface demoInterface {
     age: number,
     occupation: string
 }
+
+// Union in Types
+type unionType = string | number
+
+let a: unionType = 5
+let b: unionType = "String"
