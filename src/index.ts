@@ -23,3 +23,10 @@ function random2(): () => void {
     console.log("Random2");
   };
 }
+
+// This is how we can define interfaces
+interface demoInterface {
+    name: string,
+    age: number,
+    occupation: string
+}
